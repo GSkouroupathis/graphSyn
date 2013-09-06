@@ -3,6 +3,7 @@ class Node(object):
 	#Class constructor
 	def __init__(self, name):
 		self.name = name
+		self.attrs = {}
 	
 	#Sets the node's name
 	def set_name(self, name):

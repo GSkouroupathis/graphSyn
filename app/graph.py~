@@ -138,6 +138,7 @@ class Graph(object):
 		fbuDic[s_node] = ([s_node], 0, self.nodes[s_node].attrs[attr]) #Node : (path, distance, heuristic)
 		
 		while True:
+			print fbuDic
 			smallestNode = sorted(fbuDic.keys(), key=lambda x: fbuDic[x][2])[0] #FIX TO FIND ONLY NODES WITH CHILDREN
 			if smallestNode == f_node: return (fbuDic[smallestNode][0], fbuDic[smallestNode][1])
 			

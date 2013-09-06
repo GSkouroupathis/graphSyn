@@ -1,5 +1,4 @@
 from graph import *
-import random, time
 
 g = Graph("my graph")
 for i in ['A','B','C','D', 'E']:
