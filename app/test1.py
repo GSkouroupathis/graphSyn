@@ -1,6 +1,6 @@
 from graph import *
 import random
-
+#
 g = Graph("my graph")
 dic1 = {'Arad':366, 'Timisoara':329, 'Sibiu':253, 'Oradea':380,
 		'Lugoj':244, 'Rimnicu':193, 'Fagaras':178, 'Mehadia':241,

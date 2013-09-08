@@ -31,4 +31,4 @@ print
 for n in g.graph:
 	print n, g.nodes[n].attrs['weight']
 print
-print g.aplhastar('Arad', 'Bucharsest', 'weight')
+print g.aplhastar('Arad', 'Bucharest', 'weight')
