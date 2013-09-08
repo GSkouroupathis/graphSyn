@@ -137,6 +137,7 @@ class Graph(object):
 		if s_node == f_node: return ([s_node], 0)
 		
 		fbuDic[(s_node,)] = (0, self.nodes[s_node].attrs[attr]) #path : (distance, heuristic)
+		print fbuDic
 		
 		while True: 
 			smallestPath = sorted(fbuDic.keys(), key=lambda x: fbuDic[x][1])[0] #sort paths according to heuristic
