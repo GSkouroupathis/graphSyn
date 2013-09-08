@@ -16,9 +16,5 @@ all_paths(f_node, l_node): Returns all paths from f_node to l_node
 	Graph has to be connected
 	Also all edges need to connect nodes in both directions
 6)dijkstra(s_node, f_node): Runs Dijkstra's algorithm to return shortest path from s_node to f_node and the distance
-7)alphastar(s_node, f_node, attr): Runs A* algorithm to return shortest path from s_node to f_node and the distance
-	Uses attr as the attribute with which it computers the A* Heuristic
-	Warning: Since this algorithm is used in AI, make sure your graph doesn't contain any loops
-	Returns None if no available path
 ~~~~
-See 'test.py' and 'test1.py' for examples
+See 'test.py' for examples
