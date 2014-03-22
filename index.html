@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>graphSyn by GSkouroupathis</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>graphSyn</h1>
+        <h2>Graph algorithms in one place</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/GSkouroupathis/graphSyn/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/GSkouroupathis/graphSyn/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/GSkouroupathis/graphSyn" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>graphSyn - a Python library for easy graphs</p>
+
+<pre><code>1) Import graph.py to your project
+2) Create a new Graph
+3) Apply its algorithms
+</code></pre>
+
+<pre><code>Function List:
+1) add_node(name): Adds a node to the graph
+2) add_edge(weight, f_node_name, s_node_name, both): Adds an edge to the graph. 'both' means the edge travels both ways
+all_paths(f_node, l_node): Returns all paths from f_node to l_node
+3) lazy_shortest_path(f_node, l_node): Returns the shortest path from f_node to l_node (Lazy)
+4) lazy_longest_path(f_node, l_node): Returns the longest path from f_node to l_node (Lazy)
+5) prim(): Runs Prim's algorithm to return the minimum spanning tree of the graph
+    Graph has to be connected
+    Also all edges need to connect nodes in both directions
+6)dijkstra(s_node, f_node): Runs Dijkstra's algorithm to return shortest path from s_node to f_node and the distance
+7)alphastar(s_node, f_node, attr): Runs A* algorithm to return shortest path from s_node to f_node and the distance
+    Uses attr as the attribute with which it computers the A* Heuristic
+    Warning: Since this algorithm is used in AI, make sure your graph doesn't contain any loops
+    Returns None if no available path
+</code></pre>
+
+<p>See 'test.py' and 'test1.py' for examples</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
